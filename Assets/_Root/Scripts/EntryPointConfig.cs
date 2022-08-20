@@ -1,19 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
+using Profile;
 using UnityEngine;
 
-[CreateAssetMenu(menuName =E)]
-public class EntryPointConfig : ScriptableObject
+[CreateAssetMenu(fileName = nameof(EntryPointConfig),menuName = "Configs/" + nameof(EntryPointConfig))]
+internal class EntryPointConfig : ScriptableObject
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [field: SerializeField] public float SpeedCar { get; private set; }
+    [field: SerializeField] public GameState InitialState { get; private set; }   
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
