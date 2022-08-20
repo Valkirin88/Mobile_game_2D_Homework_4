@@ -13,10 +13,7 @@ namespace Features.Shed
 
     internal class ShedController : BaseController, IShedController
     {
-        private readonly ResourcePath _viewPath = new ResourcePath("Prefabs/Shed/ShedView");
-        private readonly ResourcePath _dataSourcePath = new ResourcePath("Configs/Shed/UpgradeItemConfigDataSource");
-
-      
+       
         private readonly IShedView _view;
         private readonly ProfilePlayer _profilePlayer;
         private readonly IUpgradeHandlersRepository _upgradeHandlersRepository;
